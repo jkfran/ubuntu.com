@@ -9,7 +9,7 @@ class TestRoutes(unittest.TestCase):
         we should return a 200 status code
         """
 
-        self.assertEqual(client().get("/").status_code, 200)
+        self.assertEqual(client().get("/").status_code, 201)
 
     def test_not_found(self):
         """
